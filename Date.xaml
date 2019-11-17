@@ -1,0 +1,232 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Date" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="396,4197" sap2010:WorkflowViewState.IdRef="Date_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="22">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Globalization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Date" sap:VirtualizedContainerService.HintSize="376,4097" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="JapaneseYear" />
+      <Variable x:TypeArguments="x:String" Name="TokyoOlympic" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <WriteLine sap2010:Annotation.AnnotationText="今日の日付&#xA;フォーマット未指定&#xA;DateTime.Now.ToString" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,118" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Today 1: &quot; + DateTime.Now.ToString]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <WriteLine sap2010:Annotation.AnnotationText="今日の日付&#xA;フォーマット指定&#xA;DateTime.Now.ToString(&quot;yyyy/MM/dd HH:mm:ss&quot;)" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,133" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[&quot;Today 2: &quot; + DateTime.Now.ToString(&quot;yyyy/MM/dd HH:mm:ss&quot;)]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <WriteLine sap2010:Annotation.AnnotationText="今日の日付&#xA;フォーマット指定&#xA;DateTime.Now.ToString(&quot;yyyy年MM月dd日 HH時mm分ss秒&quot;)" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,133" sap2010:WorkflowViewState.IdRef="WriteLine_7" Text="[&quot;Today 3: &quot; + DateTime.Now.ToString(&quot;yyyy年MM月dd日 HH時mm分ss秒&quot;)]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <WriteLine sap2010:Annotation.AnnotationText="今日の日付&#xA;フォーマット指定&#xA;DateTime.Now.ToString(&quot;yyyy/MM/dd&quot;)" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,133" sap2010:WorkflowViewState.IdRef="WriteLine_29" Text="[&quot;Today 4: &quot; + DateTime.Now.ToString(&quot;yyyy/MM/dd&quot;)]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <WriteLine sap2010:Annotation.AnnotationText="今日の日付&#xA;DateTime.Now.Date.ToString&#xA;時刻情報が無くなる" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,118" sap2010:WorkflowViewState.IdRef="WriteLine_15" Text="[&quot;Today Date: &quot; + DateTime.Now.Date.ToString]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <WriteLine sap2010:Annotation.AnnotationText="今日の日付の日のみ&#xA;DateTime.Now.ToString(&quot;dd&quot;)&#xA;DateTime.Now.Day.ToString" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,118" sap2010:WorkflowViewState.IdRef="WriteLine_9" Text="[&quot;Today 日: &quot; + DateTime.Now.ToString(&quot;dd&quot;) + &quot; and &quot; + DateTime.Now.Day.ToString]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <WriteLine sap2010:Annotation.AnnotationText="今日の日付の月のみ&#xA;DateTime.Now.ToString(&quot;MM&quot;)&#xA;DateTime.Now.Month.ToString" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,118" sap2010:WorkflowViewState.IdRef="WriteLine_13" Text="[&quot;Today 月: &quot; + DateTime.Now.ToString(&quot;MM&quot;) + &quot; and &quot; + DateTime.Now.Month.ToString]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <WriteLine sap2010:Annotation.AnnotationText="今日の月を英語名で&#xA;DateTime.Now.ToString(&quot;MMM&quot;, System.Globalization.CultureInfo.CreateSpecificCulture(&quot;en-US&quot;));" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,133" sap2010:WorkflowViewState.IdRef="WriteLine_17" Text="[&quot;Today 月 英語名: &quot; + DateTime.Now.ToString(&quot;MMM&quot;, System.Globalization.CultureInfo.CreateSpecificCulture(&quot;en-US&quot;)) + &quot; and &quot; + DateTime.Now.ToString(&quot;MMMMM&quot;, System.Globalization.CultureInfo.CreateSpecificCulture(&quot;en-US&quot;))]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <WriteLine sap2010:Annotation.AnnotationText="今日の日付の年のみ&#xA;DateTime.Now.ToString(&quot;yyyy&quot;)&#xA;DateTime.Now.Year.ToString" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,118" sap2010:WorkflowViewState.IdRef="WriteLine_14" Text="[&quot;Today 年: &quot; + DateTime.Now.ToString(&quot;yyyy&quot;) + &quot; and &quot; + DateTime.Now.Year.ToString]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <ui:InvokeCode ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="和暦はInvoke Codeでコードを呼び出す方法しかできないか？" Code="Dim format As System.Globalization.DateTimeFormatInfo = New System.Globalization.CultureInfo(&quot;ja-JP&quot;, True).DateTimeFormat&#xA;format.Calendar = New System.Globalization.JapaneseCalendar()&#xA;&#xA;out_Year = in_Date.ToString(&quot;ggyy年&quot;, format)" DisplayName="Invoke code" sap:VirtualizedContainerService.HintSize="334,191" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+      <ui:InvokeCode.Arguments>
+        <InArgument x:TypeArguments="s:DateTime" x:Key="in_Date">[DateTime.now]</InArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_Year">[JapaneseYear]</OutArgument>
+      </ui:InvokeCode.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeCode>
+    <WriteLine sap2010:Annotation.AnnotationText="今日の年を和暦で&#xA;DateTime.Now.ToString(&quot;MMM&quot;, System.Globalization.CultureInfo.CreateSpecificCulture(&quot;en-US&quot;));" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,133" sap2010:WorkflowViewState.IdRef="WriteLine_21" Text="[&quot;Today 年 和暦: &quot; + JapaneseYear]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <WriteLine sap2010:Annotation.AnnotationText="今日の曜日&#xA;DateTime.Now.Tostring(&quot;ddd&quot;)&#xA;DateTime.Now.Tostring(&quot;ddddd&quot;)&#xA;DateTime.Now.DayOfWeek.Tostring" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,133" sap2010:WorkflowViewState.IdRef="WriteLine_11" Text="[&quot;Today 曜日: &quot; + DateTime.Now.Tostring(&quot;ddd&quot;) + &quot; and &quot; + DateTime.Now.Tostring(&quot;ddddd&quot;) + &quot; and &quot; + DateTime.Now.DayOfWeek.Tostring]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <WriteLine sap2010:Annotation.AnnotationText="今日の曜日&#xA;DateTime.Now.Tostring(&quot;ddd&quot;)&#xA;DateTime.Now.Tostring(&quot;ddddd&quot;)&#xA;DateTime.Now.DayOfWeek.Tostring" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,133" sap2010:WorkflowViewState.IdRef="WriteLine_30" Text="[&quot;Today 曜日(日本語): &quot; + DateTime.Now.Tostring(&quot;ddd&quot;,New Globalization.CultureInfo(&quot;ja-JP&quot;)) + &quot; and &quot; + DateTime.Now.Tostring(&quot;ddddd&quot;,New Globalization.CultureInfo(&quot;ja-JP&quot;))]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <WriteLine sap2010:Annotation.AnnotationText="今日が1年間で何日目か&#xA;DateTime.Now.DayofYear.Tostring" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,103" sap2010:WorkflowViewState.IdRef="WriteLine_16" Text="[&quot;Today 年間積算日: &quot; + DateTime.Now.DayofYear.Tostring]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <WriteLine sap2010:Annotation.AnnotationText="今日から100日後の日付&#xA;DateTime.Now.DayofYear.Tostring(&quot;yyyy/MM/dd&quot;)" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,118" sap2010:WorkflowViewState.IdRef="WriteLine_18" Text="[&quot;今日から100日後: &quot; + DateTime.Now.AddDays(100).ToString(&quot;yyyy/MM/dd&quot;)]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <WriteLine sap2010:Annotation.AnnotationText="今日から6カ月後の日付&#xA;DateTime.Now.DayofYear.Tostring(&quot;yyyy/MM/dd&quot;)" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,118" sap2010:WorkflowViewState.IdRef="WriteLine_19" Text="[&quot;今日から6カ月前: &quot; + DateTime.Now.AddMonths(-6).ToString(&quot;yyyy/MM/dd&quot;)]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <WriteLine sap2010:Annotation.AnnotationText="今日から3年後の日付&#xA;DateTime.Now.DayofYear.Tostring(&quot;yyyy/MM/dd&quot;)" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,118" sap2010:WorkflowViewState.IdRef="WriteLine_20" Text="[&quot;今日から3年後: &quot; + DateTime.Now.AddYears(3).ToString(&quot;yyyy/MM/dd&quot;)]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <WriteLine sap2010:Annotation.AnnotationText="月初&#xA;DateTime.Now.Tostring(&quot;yyyy/MM/01&quot;)" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,118" sap2010:WorkflowViewState.IdRef="WriteLine_22" Text="[&quot;月初: &quot; + DateTime.Now.Tostring(&quot;yyyy/MM/01&quot;)]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <WriteLine sap2010:Annotation.AnnotationText="先月末&#xA;Datetime.Parse(DateTime.Now.Tostring(&quot;yyyy/MM/01&quot;)).AddDays(-1).ToString(&quot;yyyy/MM/dd&quot;)" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,148" sap2010:WorkflowViewState.IdRef="WriteLine_23" Text="[&quot;先月末: &quot; + Datetime.Parse(DateTime.Now.Tostring(&quot;yyyy/MM/01&quot;)).AddDays(-1).ToString(&quot;yyyy/MM/dd&quot;)]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <WriteLine sap2010:Annotation.AnnotationText="日付計算&#xA;DateTime.Now.Tostring(&quot;yyyy/MM/01&quot;)" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,118" sap2010:WorkflowViewState.IdRef="WriteLine_25" Text="[&quot;日付計算 同日: &quot; + (DateTime.Now - DateTime.Now).TotalDays.ToString]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <WriteLine sap2010:Annotation.AnnotationText="日付計算 未来&#xA;DateTime.Now.Tostring(&quot;yyyy/MM/01&quot;)" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,118" sap2010:WorkflowViewState.IdRef="WriteLine_26" Text="[&quot;日付計算 未来: &quot; + (DateTime.Now - DateTime.Now.AddMonths(1)).TotalDays.ToString]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <WriteLine sap2010:Annotation.AnnotationText="日付計算 過去&#xA;DateTime.Now.Tostring(&quot;yyyy/MM/01&quot;)" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,118" sap2010:WorkflowViewState.IdRef="WriteLine_27" Text="[&quot;日付計算 過去: &quot; + (DateTime.Now - DateTime.Now.AddMonths(-1)).TotalDays.ToString]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <WriteLine sap2010:Annotation.AnnotationText="日付計算 特定日からの差&#xA;Tokyoオリンピック開催日&#xA;(DateTime.Now.Date - DateTime.Parse(&quot;2020/7/24&quot;)).TotalDays.ToString" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,148" sap2010:WorkflowViewState.IdRef="WriteLine_28" Text="[&quot;日付計算 特定日時: &quot; + (DateTime.Now.Date - DateTime.Parse(&quot;2020/7/24&quot;)).TotalDays.ToString]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <WriteLine sap2010:Annotation.AnnotationText="特定日の曜日&#xA;Tokyoオリンピック開催日&#xA;(DateTime.Now.Date - DateTime.Parse(&quot;2020/7/24&quot;)).TotalDays.ToString" DisplayName="1 行を書き込み" sap:VirtualizedContainerService.HintSize="334,148" sap2010:WorkflowViewState.IdRef="WriteLine_31" Text="[&quot;特定日 曜日: &quot; + DateTime.Parse(&quot;2020/7/24&quot;).DayOfWeek.Tostring]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+  </Sequence>
+</Activity>
